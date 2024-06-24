@@ -1,0 +1,3 @@
+- Implémenter les tests unitaires
+- Ajouter des animations pour les mises à jour des taux
+- Améliorer la gestion des erreurs pour les saisies utilisateurs

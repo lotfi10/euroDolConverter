@@ -1,0 +1,15 @@
+<form [formGroup]="form">
+    <label>
+      Montant:
+      <input formControlName="amount" type="number">
+    </label>
+    <label>
+      Taux de change fixe:
+      <input formControlName="fixedRate" type="number">
+    </label>
+    <p>Converti: {{ convertedValue | number:'1.2-2' }} {{ isEurToUsd ? 'USD' : 'EUR' }}</p>
+    <button type="button" (click)="toggleCurrency()">
+      Switch to {{ isEurToUsd ? 'USD to EUR' : 'EUR to USD' }}
+    </button>
+  </form>
+  

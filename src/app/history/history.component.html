@@ -1,0 +1,19 @@
+<table>
+    <thead>
+      <tr>
+        <th>Taux</th>
+        <th>Montant initial</th>
+        <th>Résultat</th>
+        <th>De</th>
+        <th>À</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entry of history">
+        <td>{{ entry.rate | number:'1.2-2' }}</td>
+        <td>{{ entry.amount | number:'1.2-2' }} {{ entry.from }}</td>
+        <td>{{ entry.result | number:'1.2-2' }} {{ entry.to }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
